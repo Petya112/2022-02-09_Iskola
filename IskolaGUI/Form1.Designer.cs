@@ -72,6 +72,7 @@ namespace IskolaGUI
             this.Controls.Add(this.btnTörlés);
             this.Name = "Form1";
             this.Text = "IskolaGUI";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
