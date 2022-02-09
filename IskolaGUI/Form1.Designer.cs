@@ -71,7 +71,7 @@ namespace IskolaGUI
             this.Controls.Add(this.btnMentés);
             this.Controls.Add(this.btnTörlés);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "IskolaGUI";
             this.ResumeLayout(false);
 
         }
