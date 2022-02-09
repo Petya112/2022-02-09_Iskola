@@ -18,9 +18,19 @@ namespace IskolaGUI
             InitializeComponent();
         }
 
+        private void btnTörlés_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Nem jelölt ki tanulót !", "Figyelmeztetés", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+        }
 
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
             foreach (var sor in File.ReadAllLines("nevek.txt"))
             {
